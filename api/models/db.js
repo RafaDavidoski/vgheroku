@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var gracefulShutdown;
 var dbURI = 'mongodb://admin:admin123@ds037518.mlab.com:37518/videogrammdb';
 if (process.env.NODE_ENV === 'production') {
-  dbURI = process.env.MONGOLAB_URI;
+  dbURI = process.env.MONGODB_URI;
 }
 
 mongoose.connect(dbURI);
