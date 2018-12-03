@@ -92,7 +92,7 @@ db.once('open', function(){
     console.log("Conectado no Mongo");
 });
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/videogrammdb2', { useMongoClient: true });
+mongoose.connect('mongodb://admin:admin123@ds037518.mlab.com:37518/videogrammdb', { useMongoClient: true });
 
 
 module.exports = app;
