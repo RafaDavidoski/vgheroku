@@ -5,7 +5,7 @@ if (process.env.NODE_ENV === 'production') {
   dbURI = process.env.MONGODB_URI;
 }
 
-mongoose.connect(dbURI);
+mongoose.connect('mongodb://admin:admin123@ds037518.mlab.com:37518/videogrammdb');
 
 // Mensagens de Conexão 
 mongoose.connection.on('connected', function() {
