@@ -5,14 +5,14 @@ var debug = require('debug')('VideoGramm - Web Application:server');
 var http = require('http');
 
 // Armazenando a porta 
-var port = normalizePort(process.env.PORT || '3000');
+//var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 // Criando o servidor
 var server = http.createServer(app);
 
 //Executnado o servidor na porta definida acima
-server.listen(port);
+server.listen(process.env.PORT || '5000');
 server.on('error', onError);
 server.on('listening', onListening);
 
